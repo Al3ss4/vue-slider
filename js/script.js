@@ -41,7 +41,16 @@ const app = new Vue({
         slides,
         //indichiamo l'immagine attiva tramite l'indice del nostro array
         activeSlide: 0
-        
+    },
+    methods:{
+        //
+        nextSlide(){
+        //impostiamo lo scorrimento delle immagini tramite prev e next
+            this.activeSlide == this.slides.length -1 ? this.activeSlide = 0 : this.activeSlide++;
+        },
+        prevSlide(){
+            this.activeSlide == 0 ? this.activeSlide = this.slides.length -1 : this.activeSlide--;
+        }, 
     }
 
 });
