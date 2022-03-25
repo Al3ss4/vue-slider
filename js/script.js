@@ -38,7 +38,10 @@ const app = new Vue({
     el:'#app',
     data:{
 //richiamiamo le immagini con la const slides
-        slides  
+        slides,
+        //indichiamo l'immagine attiva tramite l'indice del nostro array
+        activeSlide: 0
+        
     }
 
 });
