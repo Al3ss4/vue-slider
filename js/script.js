@@ -33,12 +33,18 @@ console.log(slides);
 //Partendo dal template fornito renderizzare lo slider con Vue
 
 
+const app = new Vue({
+//aggangiamo vue all'HTML tramite l'id app
+    el:'#app',
+    data:{
+//richiamiamo le immagini con la const slides
+        slides  
+    }
 
-
+});
 
 /*
 Bonus:
 1- al click su una thumb, visualizzare in grande l'immagine corrispondente
 2- applicare l'autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
-3- quando il mouse va in hover sullo slider, bloccare l'autoplay e farlo riprendere quando esce
-*/
+3- quando il mouse va in hover sullo slider, bloccare l'autoplay e farlo riprendere quando esce*/
